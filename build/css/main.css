@@ -1,0 +1,100 @@
+*, html {
+  margin: 0; }
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto; }
+
+.grid {
+  display: flex;
+  align-content: center; }
+  .grid--center {
+    justify-content: center; }
+  .grid--evenly {
+    justify-content: space-evenly; }
+
+.slick-slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  font-size: 2em;
+  cursor: pointer; }
+  .slick-slider .slick-arrow.slick-prev {
+    left: 15px; }
+  .slick-slider .slick-arrow.slick-next {
+    right: 15px; }
+
+.slick-slider img {
+  cursor: -webkit-grab; }
+
+.home .rellax {
+  background: transparent; }
+
+.home header {
+  position: relative;
+  width: 100%;
+  height: 80px; }
+  .home header nav.menu {
+    width: 30%;
+    height: 100%;
+    line-height: 80px;
+    float: left; }
+    .home header nav.menu ul li {
+      position: relative;
+      display: inline-block;
+      margin: 0 10px;
+      padding: 0 10px; }
+      .home header nav.menu ul li a {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer; }
+      .home header nav.menu ul li .submenu {
+        display: none;
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        background-color: #000;
+        margin: 0;
+        padding: 0; }
+        .home header nav.menu ul li .submenu li {
+          display: block;
+          margin: 0;
+          line-height: 25px;
+          text-align: left;
+          padding-left: 10px; }
+          .home header nav.menu ul li .submenu li a {
+            color: #fff; }
+      .home header nav.menu ul li.has-submenu:hover {
+        background-color: #000; }
+        .home header nav.menu ul li.has-submenu:hover a {
+          color: #fff; }
+        .home header nav.menu ul li.has-submenu:hover .submenu {
+          display: block; }
+    .home header nav.menu-aside {
+      float: right; }
+  .home header .logo {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%); }
+
+.home .banner__tv img {
+  width: 100%; }
+
+.home .thumbs {
+  max-width: 100%;
+  margin: 20px 0;
+  position: relative; }
+  .home .thumbs__figure {
+    margin: 0 2%; }
+    .home .thumbs__figure span {
+      display: block;
+      text-align: center; }
+
+.home .notice {
+  margin: 50px 0; }
+  .home .notice__text {
+    max-width: 30%; }

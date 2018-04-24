@@ -1,0 +1,12 @@
+.grid {
+	display: flex;
+	align-content: center;
+
+	&--center  {
+		justify-content: center;
+	}
+
+	&--evenly {
+		justify-content: space-evenly;
+	}
+}
