@@ -7,7 +7,31 @@ block vars
 block content
 	header.header
 		.container
-			nav.menu
+			button(type="button" id="btn-menu" class="js-open-menu btn-menu")
+				i.fa.fa-bars
+			nav.menu.menu-mobile
+				button(type="button" id="btn-close-menu" class="js-close-menu")
+					i.fa.fa-times
+				ul
+					li
+						a Home
+					li
+						a Sobre
+					li.has-submenu
+						a Serviços
+						ul.submenu
+							li
+								a Sub1
+							li
+								a Sub2
+							li 
+								a Sub3
+					li
+						a Trabalhe Conosco
+					li 
+						a Contato
+
+			nav.menu.menu-desktop
 				ul
 					li 
 						a Home
@@ -24,7 +48,7 @@ block content
 								a Sub3
 			.logo
 				img(src="http://via.placeholder.com/100x100")/
-			nav.menu.menu-aside
+			nav.menu.menu-aside.menu-desktop
 				ul
 					li 
 						a(href="trabalhe-conosco.html") Trabalhe Conosco
@@ -33,16 +57,16 @@ block content
 	.banner
 		.banner__tv.js-slide
 			div
-				img(src="http://via.placeholder.com/1280x300")/
+				img(src="http://via.placeholder.com/1280x500")/
 			div
-				img(src="http://via.placeholder.com/1280x300")/
+				img(src="http://via.placeholder.com/1280x500")/
 			div
-				img(src="http://via.placeholder.com/1280x300")/
+				img(src="http://via.placeholder.com/1280x500")/
 
 	//- Parallax
 	.rellax
 		section.thumbs
-			.container.grid.grid--center
+			.container.grid.grid--center.grid--column
 				figure.thumbs__figure
 					img(src="http://via.placeholder.com/200x200")/
 					span hover #000
@@ -56,7 +80,7 @@ block content
 					img(src="http://via.placeholder.com/200x200")/
 					span hover #000
 		section.notice
-			.container.grid.grid--evenly
+			.container.grid.grid--evenly.grid--column
 				figure.notice__figure
 					img(src="http://via.placeholder.com/400x400")/
 				p.notice__text

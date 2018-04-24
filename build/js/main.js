@@ -14,9 +14,22 @@ const home = {
   			);
 	},
 
+	menu: () => {
+		$('.js-open-menu').on('click touchstart', function() {
+			$('body').addClass('no-scroll')
+			$('.menu-mobile').addClass('is-active')
+		})
+
+		$('.js-close-menu').on('click touchstart', function() {
+			$('body').removeClass('no-scroll')
+			$('.menu-mobile').removeClass('is-active')
+		})
+	},
+
 	init:() => {
 		home.slide()
 		home.parallax()
+		home.menu()
 	}
 }
 
